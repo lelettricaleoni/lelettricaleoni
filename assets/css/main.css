@@ -83,6 +83,10 @@ select {
   }
 }
 
+p {
+  color: var(--clr-neutal);
+}
+
 body {
     background-color: var(--clr-primary);
     text-align: center;
@@ -157,6 +161,7 @@ header {
 }
 
 .text-neutral {
+    font-family: var(--ff--primary);
     color: var(--clr-neutal);
 }
 
@@ -172,5 +177,5 @@ header {
 }
 
 .footer {
-  margin-top: auto !important;
+    margin-top: auto !important;
 }
