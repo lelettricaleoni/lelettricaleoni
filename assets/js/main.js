@@ -1,3 +1,3 @@
 setTimeout(function(){
-   window.location.href = 'https://goo.gl/maps/XeLs4PUpzUQkmGXz8)/';
+   window.location.href = 'https://goo.gl/maps/EfWCxS1TeTK79DGp6';
 }, 5000);
