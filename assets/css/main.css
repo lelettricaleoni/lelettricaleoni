@@ -188,7 +188,6 @@ header {
 .popup-maps {
   position: fixed !important; 
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 5px #ffffff;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   top: 28%;
