@@ -188,6 +188,7 @@ header {
 .popup-maps {
   position: fixed !important; 
   background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px #ffffff;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   top: 28%;
@@ -234,11 +235,27 @@ header {
   }
 
   .popup-maps > a {
+    position: inherit;
     transform: translate(124px, -36px);
+    height: 31px;
+    width: 31px;
+    padding-bottom: 2px;
+    padding-left: 1px;
+    border-radius: 100%;
+  
+    transition: 0.3s;
   }
 
-  .popup-maps {
+  .popup-maps > a {
+    position: inherit;
     position: absolute !important; 
+    height: 31px;
+    width: 31px;
+    padding-bottom: 2px;
+    padding-left: 1px;
+    border-radius: 100%;
+  
+    transition: 0.3s;
   }
   
 }
