@@ -2,7 +2,7 @@
     --clr-primary: rgb(0, 0, 0);
     --clr-accent: rgb(52, 255, 255);
 
-    --clr-neutal: rgb(255, 255, 255);
+    --clr-neutral: rgb(255, 255, 255);
 
     --ff--primary: "Mochiy Pop One", sans-serif;
 
@@ -84,7 +84,8 @@ select {
 }
 
 p {
-  color: var(--clr-neutal);
+  color: var(--clr-neutral);
+  font-family: var(--ff--primary);
 }
 
 body {
@@ -96,15 +97,8 @@ h1 {
     font-size: 5rem;
 }
 
-@media (max-width: 70em) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-
 footer {
-  color: var(--clr-neutal);
-  font-family: var(--ff--primary);
+  color: var(--clr-neutral);
   font-size: 10px;
 
   height: 50px;
@@ -117,6 +111,18 @@ footer > * {
 
 header {
   display: block;
+}
+
+.clr-primary {
+  color: var(--clr-primary);
+}
+
+.clr-accent {
+  color: var(--clr-accent);
+}
+
+.clr-neutral {
+  color: var(--clr-neutral);
 }
 
 .header {
@@ -144,7 +150,6 @@ header {
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
-    
 }
 
 .logo {
@@ -162,7 +167,7 @@ header {
 
 .text-neutral {
     font-family: var(--ff--primary);
-    color: var(--clr-neutal);
+    color: var(--clr-neutral);
 }
 
 /*footer on bottom page*/
@@ -178,4 +183,62 @@ header {
 
 .footer {
     margin-top: auto !important;
+}
+
+.popup-maps {
+  position: fixed !important; 
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  top: 28%;
+  z-index: 1;
+}
+
+.popup-maps > a {
+  position: inherit;
+  transform: translate(274px, -36px);
+  height: 31px;
+  width: 31px;
+  padding-bottom: 2px;
+  padding-left: 1px;
+  border-radius: 100%;
+
+  transition: 0.3s;
+}
+
+.popup-maps > a:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.popup-maps > p {
+  padding-top: 4px;
+  font-size: 12px;
+  text-align: left;
+  width: 220px;
+  height: 32px;
+}
+
+.map {
+  width: 600px; 
+  height: 450px;
+}
+
+@media (max-width: 70em) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .map {
+    width: 300px; 
+    height: 300px;
+  }
+
+  .popup-maps > a {
+    transform: translate(124px, -36px);
+  }
+
+  .popup-maps {
+    position: absolute !important; 
+  }
+  
 }
