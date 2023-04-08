@@ -1,7 +1,17 @@
-setTimeout(function(){
-   window.open('https://goo.gl/maps/EfWCxS1TeTK79DGp6', '_blank');
-}, 2800);
+function maps(open) {
+   if (open) {
+      document.getElementById('mapPopUp').classList.remove('none');
+   } else {
+      document.getElementById('mapPopUp').classList.add('none');
 
-setTimeout(function() {
-   window.location.href = 'maps.html';
-}, 5400);
+   }
+}
+
+function rent(open) {
+   if (open) {
+      document.getElementById('rentPopUp').classList.remove('none');
+   } else {
+      document.getElementById('rentPopUp').classList.add('none');
+
+   }
+}

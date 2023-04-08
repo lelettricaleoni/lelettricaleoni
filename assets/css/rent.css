@@ -1,0 +1,87 @@
+.popup-rent {
+    position: fixed;
+
+    background-color: var(--clr-neutral);
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    z-index: 1;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.popup-rent .header{
+  height: 2.6rem;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 10px;
+}
+
+.popup-rent span {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 3px;
+}
+
+.popup-rent button {
+  height: 31px;
+  width: 31px;
+
+  background-color: var(--clr-neutral);
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+
+  transition: 0.3s;
+}
+
+.popup-rent button:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.popup-rent button:active {
+    background-color: rgb(219, 219, 219);
+}
+
+.popup-rent a {
+    text-decoration: none;
+}
+
+.popup-rent p {
+  color: var(--clr-primary);
+  font-family: var(--ff-secondary);
+  font-weight: 600;
+
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.popup-rent p:hover {
+    color: rgb(88, 88, 88);
+}
+
+.popup-rent p:active {
+    color: rgb(88, 88, 88);
+}
+
+.pdf {
+    width: 600px; 
+    height: 600px;
+}
+  
+@media (max-width: 700px) {
+  
+  .pdf {
+    width: 300px; 
+    height: 300px;
+  }
+    
+}

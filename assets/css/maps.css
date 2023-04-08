@@ -1,0 +1,69 @@
+.popup-maps {
+    position: fixed;
+
+    background-color: var(--clr-neutral);
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    z-index: 1;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.popup-maps .header {
+  height: 2.6rem;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 10px;
+}
+
+
+.popup-maps button {
+  height: 31px;
+  width: 31px;
+
+  background-color: var(--clr-neutral);
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+
+  transition: 0.3s;
+}
+
+.popup-maps button:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.popup-maps button:active {
+  background-color: rgb(219, 219, 219);
+}
+
+.popup-maps p {
+  color: var(--clr-primary);
+  font-family: var(--ff-secondary);
+  font-weight: 600;
+
+  font-size: 1em;
+  text-align: left;
+}
+
+.map {
+  width: 600px; 
+  height: 450px;
+}
+  
+@media (max-width: 70em) {
+  
+  .map {
+    width: 300px; 
+    height: 300px;
+  }
+    
+}

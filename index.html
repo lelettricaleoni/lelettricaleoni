@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,78 @@
     
     <link href="assets/css/main.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/images/favi/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     
-    <title>Coming soon..</title>
+    <title>Lelettrica - Home</title>
 </head>
-    
-<!-- Google tag (gtag.js) -->
+
+<!-- Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MBYPZ3HD5"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-3MBYPZ3HD5');
 </script>
 
+<!---------------------------->
+
 <body class="footer-all-bottom">
-    <header class="header">
+
+    <header>
         <div class="container">                
                 <a href="/">
                     <img class="logo" src="assets/images/lelettricaleoni-logo.svg" alt="logo">
                 </a>
             <nav class="nav__container">
                 <ul>
-                    <li>Home</li>
-                    <li>Maps</li>
+                    <li></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    <h1 class="text-primary vert-center">Site Coming Soon</h1>
+
+    <main class="vert-center">
+        <article id="mapPopUp" class="none popup-maps">
+            <section class="header">
+                <p>Visit The Shop on Google Maps</p>
+            
+                <button class="vert-center" onclick="maps(false)">
+                    <svg class="exit-error-button-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" fill="#5F6368"></path></svg>
+                </button>
+            </section>
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5547.239758187689!2d10.898153!3d45.9588773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4782137485b09a53%3A0x3cef2078cbf6719b!2sLelettrica%20di%20Leoni%20Gabriele!5e0!3m2!1sit!2sit!4v1661118404845!5m2!1sit!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+
+        <article id="rentPopUp" class="none popup-rent">
+            <section class="header">
+                <span>
+                    <a target="_blank" href="./assets/pdf/lelettrica-rent-brochure.pdf"><p>Rent brochure</p></a>
+                    <img height="17px" width="17px" src="assets/svg/redirect.svg" alt="redirect-icon">    
+                </span>
+
+                <button class="vert-center" onclick="rent(false)">
+                    <svg class="exit-error-button-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" fill="#5F6368"></path></svg>
+                </button>
+            </section>
+
+            <iframe class="pdf" src="./assets/pdf/lelettrica-rent-brochure.pdf" style="border:0;"></iframe>
+        </article>
+
+        <h1 class="text-primary">Site Coming Soon</h1>
+
+        <article class="buttons">
+            <button onclick="maps(true)">Maps</button>
+            <button onclick="rent(true)">Noleggio/Rent</button>
+        </article>
+    </main>
 
     <footer class="footer">
-        <p>Lellettrica Leoni Copyright</p>
+        <p>Lellettrica Copyright</p>
     </footer>
 
     <script src="assets/js/main.js"></script>
